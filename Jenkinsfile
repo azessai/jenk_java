@@ -4,7 +4,7 @@ node {
     }
     stage('Build') {
         sh 'ls -l'
-        sh 'rm -f Main'
+        sh 'rm -f Main.class'
         sh 'javac Main.java'
     }
     stage('Run') {

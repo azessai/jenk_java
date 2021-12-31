@@ -1,5 +1,8 @@
 node {
     stage('Clone') {
+        sh 'ls -l'
+        sh 'rm -rf *'
+        sh 'ls -l'
         git 'https://github.com/azessai/jenk_java.git'
     }
     stage('Build') {
